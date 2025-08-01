@@ -26,7 +26,7 @@ export default function Footer() {
                 onClick={() => window.open('https://t.me/MLBBArenaAmeteur', '_blank')}
                 variant="outline" 
                 size="sm" 
-                className="border-mlGold text-mlGold hover:bg-mlGold hover:text-black"
+                className="border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white"
               >
                 <Icon name="MessageCircle" className="h-4 w-4" />
               </Button>
@@ -34,7 +34,7 @@ export default function Footer() {
                 onClick={() => window.open('https://www.twitch.tv/mobilelegendsarena', '_blank')}
                 variant="outline" 
                 size="sm" 
-                className="border-mlPurple text-mlPurple hover:bg-mlPurple hover:text-white"
+                className="border-purple-600 text-purple-600 hover:bg-purple-600 hover:text-white"
               >
                 <Icon name="Video" className="h-4 w-4" />
               </Button>

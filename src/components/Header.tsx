@@ -18,7 +18,7 @@ export default function Header() {
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-4">
-            <Icon name="Crown" className="h-8 w-8 text-mlGold" />
+            <Icon name="Castle" className="h-8 w-8 text-mlGold" />
             <h1 className="text-2xl font-heading font-bold text-white">
               MLBB <span className="text-mlGold">Арена</span>
             </h1>
