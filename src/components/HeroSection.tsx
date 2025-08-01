@@ -9,7 +9,7 @@ const scrollToSection = (sectionId: string) => {
 };
 
 const handleStreams = () => {
-  window.open('https://twitch.tv/mobilelegends', '_blank');
+  window.open('https://www.twitch.tv/mobilelegendsarena', '_blank');
 };
 
 export default function HeroSection() {

@@ -54,7 +54,7 @@ const tournaments = {
       teams: 32,
       viewers: "15.2K",
       date: "15 Августа",
-      stream: "https://twitch.tv/mobilelegends",
+      stream: "https://www.twitch.tv/mobilelegendsarena",
       progress: 45,
       league: 'legendary'
     },
@@ -80,7 +80,7 @@ const tournaments = {
       teams: 16,
       viewers: "32.8K",
       date: "15 Августа",
-      stream: "https://twitch.tv/mobilelegends",
+      stream: "https://www.twitch.tv/mobilelegendsarena",
       progress: 75,
       league: 'mythic'
     },
@@ -106,7 +106,7 @@ const tournaments = {
       teams: 8,
       viewers: "75.5K",
       date: "15 Августа",
-      stream: "https://twitch.tv/mobilelegends",
+      stream: "https://www.twitch.tv/mobilelegendsarena",
       progress: 85,
       league: 'immortal'
     },
@@ -132,7 +132,7 @@ const tournaments = {
       teams: 64,
       viewers: "8.3K",
       date: "15 Августа",
-      stream: "https://twitch.tv/mobilelegends",
+      stream: "https://www.twitch.tv/mobilelegendsarena",
       progress: 30,
       league: 'solo'
     },
@@ -355,7 +355,7 @@ export default function TournamentsSection() {
                         </Badge>
                         {match.status === 'live' && (
                           <Button 
-                            onClick={() => window.open('https://twitch.tv/mobilelegends', '_blank')}
+                            onClick={() => window.open('https://www.twitch.tv/mobilelegendsarena', '_blank')}
                             className="bg-purple-600 hover:bg-purple-700"
                           >
                             <Icon name="Video" className="mr-2 h-4 w-4" />
@@ -406,7 +406,7 @@ export default function TournamentsSection() {
                     <div className="text-sm text-gray-400">25,341 зрителя</div>
                   </div>
                   <Button 
-                    onClick={() => window.open('https://twitch.tv/mobilelegends', '_blank')}
+                    onClick={() => window.open('https://www.twitch.tv/mobilelegendsarena', '_blank')}
                     className="w-full bg-purple-600 hover:bg-purple-700"
                   >
                     Смотреть на Twitch
