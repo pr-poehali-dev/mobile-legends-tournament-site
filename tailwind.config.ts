@@ -67,8 +67,8 @@ export default {
 				mlBlack: '#000000',
 				legendary: '#FF4444',
 				mythic: '#00E5FF',
-				immortal: '#FF6B35',
-				soloQueue: '#9C27B0',
+				immortal: '#8B5CF6',
+				soloLeveling: '#4A0E4E',
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
@@ -152,26 +152,26 @@ export default {
 				},
 				'mythic-glow': {
 					'0%, 100%': {
-						boxShadow: '0 0 20px rgba(0, 229, 255, 0.4), 0 0 40px rgba(255, 215, 0, 0.3), inset 0 0 20px rgba(0, 229, 255, 0.1)'
+						boxShadow: '0 0 25px rgba(0, 229, 255, 0.5), 0 0 45px rgba(255, 215, 0, 0.4), inset 0 0 25px rgba(0, 229, 255, 0.15)'
 					},
 					'50%': {
-						boxShadow: '0 0 30px rgba(0, 229, 255, 0.6), 0 0 60px rgba(255, 215, 0, 0.4), inset 0 0 30px rgba(0, 229, 255, 0.2)'
+						boxShadow: '0 0 35px rgba(0, 229, 255, 0.7), 0 0 65px rgba(255, 215, 0, 0.5), inset 0 0 35px rgba(0, 229, 255, 0.25)'
 					}
 				},
 				'immortal-glow': {
 					'0%, 100%': {
-						boxShadow: '0 0 25px rgba(255, 107, 53, 0.5), 0 0 50px rgba(255, 215, 0, 0.4), inset 0 0 25px rgba(255, 107, 53, 0.15)'
+						boxShadow: '0 0 30px rgba(139, 92, 246, 0.6), 0 0 55px rgba(255, 215, 0, 0.5), 0 0 80px rgba(0, 0, 0, 0.4), inset 0 0 30px rgba(139, 92, 246, 0.2)'
 					},
 					'50%': {
-						boxShadow: '0 0 35px rgba(255, 107, 53, 0.7), 0 0 70px rgba(255, 215, 0, 0.5), inset 0 0 35px rgba(255, 107, 53, 0.25)'
+						boxShadow: '0 0 40px rgba(139, 92, 246, 0.8), 0 0 75px rgba(255, 215, 0, 0.6), 0 0 100px rgba(0, 0, 0, 0.6), inset 0 0 40px rgba(139, 92, 246, 0.3)'
 					}
 				},
-				'solo-glow': {
+				'solo-leveling-glow': {
 					'0%, 100%': {
-						boxShadow: '0 0 20px rgba(156, 39, 176, 0.4), inset 0 0 20px rgba(156, 39, 176, 0.1)'
+						boxShadow: '0 0 25px rgba(74, 14, 78, 0.6), 0 0 45px rgba(139, 92, 246, 0.4), 0 0 65px rgba(0, 0, 0, 0.8), inset 0 0 25px rgba(74, 14, 78, 0.3)'
 					},
 					'50%': {
-						boxShadow: '0 0 30px rgba(156, 39, 176, 0.6), inset 0 0 30px rgba(156, 39, 176, 0.2)'
+						boxShadow: '0 0 35px rgba(74, 14, 78, 0.8), 0 0 60px rgba(139, 92, 246, 0.6), 0 0 85px rgba(0, 0, 0, 1), inset 0 0 35px rgba(74, 14, 78, 0.4)'
 					}
 				}
 			},
@@ -185,7 +185,7 @@ export default {
 				'legendary-glow': 'legendary-glow 3s ease-in-out infinite',
 				'mythic-glow': 'mythic-glow 3s ease-in-out infinite',
 				'immortal-glow': 'immortal-glow 3s ease-in-out infinite',
-				'solo-glow': 'solo-glow 2.5s ease-in-out infinite'
+				'solo-leveling-glow': 'solo-leveling-glow 2.5s ease-in-out infinite'
 			}
 		}
 	},

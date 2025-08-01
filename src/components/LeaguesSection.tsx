@@ -18,7 +18,7 @@ const leagues = [
     id: 'mythic',
     name: 'Мифическая Лига',
     color: 'mythic',
-    bgGradient: 'from-cyan-400 via-cyan-500 to-yellow-500',
+    bgGradient: 'from-cyan-400 via-cyan-500 to-yellow-400',
     glowEffect: 'animate-mythic-glow',
     description: 'Элитная лига для лучших команд',
     minRank: 'Mythic V',
@@ -29,7 +29,7 @@ const leagues = [
     id: 'immortal',
     name: 'Бессмертная Лига',
     color: 'immortal',
-    bgGradient: 'from-orange-500 via-red-500 to-yellow-500',
+    bgGradient: 'from-purple-600 via-purple-500 to-yellow-500',
     glowEffect: 'animate-immortal-glow',
     description: 'Высшая лига для чемпионов',
     minRank: 'Mythic Glory',
@@ -38,12 +38,12 @@ const leagues = [
   },
   {
     id: 'solo',
-    name: 'Solo Queue',
-    color: 'soloQueue',
-    bgGradient: 'from-purple-600 to-purple-800',
-    glowEffect: 'animate-solo-glow',
+    name: 'Solo Leveling',
+    color: 'soloLeveling',
+    bgGradient: 'from-black via-purple-900 to-purple-600',
+    glowEffect: 'animate-solo-leveling-glow',
     description: 'Для одиночных игроков',
-    minRank: 'Epic V',
+    minRank: 'Epic I',
     maxPrize: '₽100,000',
     promotion: 'Автоматический подбор команд'
   }
@@ -58,7 +58,7 @@ export default function LeaguesSection() {
         </h3>
         <p className="text-center text-gray-300 mb-12 max-w-3xl mx-auto">
           Все команды начинают в Легендарной лиге. По итогам сезона 1-2 места поднимаются в следующую лигу.
-          Solo Queue — для игроков без команды с автоматическим подбором союзников.
+          Solo Leveling — для игроков без команды с автоматическим подбором союзников.
         </p>
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
           {leagues.map((league) => (
@@ -131,7 +131,7 @@ export default function LeaguesSection() {
                 <div>Только лучшие из лучших попадают в высшую лигу</div>
               </div>
               <div className="space-y-2">
-                <div className="font-semibold text-soloQueue">Solo Queue</div>
+                <div className="font-semibold text-soloLeveling">Solo Leveling</div>
                 <div>Система автоматически создает команды из 5 случайных игроков</div>
               </div>
             </div>

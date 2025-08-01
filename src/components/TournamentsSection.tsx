@@ -19,7 +19,7 @@ const leagues = [
     id: 'mythic',
     name: 'Мифическая Лига',
     color: 'mythic',
-    bgGradient: 'from-cyan-400 via-cyan-500 to-yellow-500',
+    bgGradient: 'from-cyan-400 via-cyan-500 to-yellow-400',
     description: 'Элитная лига для лучших команд',
     minRank: 'Mythic V',
     maxPrize: '₽500,000'
@@ -28,18 +28,18 @@ const leagues = [
     id: 'immortal',
     name: 'Бессмертная Лига',
     color: 'immortal',
-    bgGradient: 'from-orange-500 via-red-500 to-yellow-500',
+    bgGradient: 'from-purple-600 via-purple-500 to-yellow-500',
     description: 'Высшая лига для чемпионов',
     minRank: 'Mythic Glory',
     maxPrize: '₽1,000,000'
   },
   {
     id: 'solo',
-    name: 'Solo Queue',
-    color: 'soloQueue',
-    bgGradient: 'from-purple-600 to-purple-800',
+    name: 'Solo Leveling',
+    color: 'soloLeveling',
+    bgGradient: 'from-black via-purple-900 to-purple-600',
     description: 'Для одиночных игроков',
-    minRank: 'Epic V',
+    minRank: 'Epic I',
     maxPrize: '₽100,000'
   }
 ];
