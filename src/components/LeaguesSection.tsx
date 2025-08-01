@@ -8,7 +8,7 @@ const leagues = [
     name: 'Легендарная Лига',
     color: 'legendary',
     bgGradient: 'from-red-600 via-red-500 to-yellow-500',
-    glowEffect: 'animate-legendary-glow',
+    glowEffect: '',
     description: 'Стартовая лига для всех команд',
     minRank: 'Grandmaster V',
     maxPrize: '₽250,000',
@@ -19,7 +19,7 @@ const leagues = [
     name: 'Мифическая Лига',
     color: 'mythic',
     bgGradient: 'from-cyan-400 via-cyan-500 to-yellow-400',
-    glowEffect: 'animate-mythic-glow',
+    glowEffect: '',
     description: 'Элитная лига для лучших команд',
     minRank: 'Mythic V',
     maxPrize: '₽500,000',
@@ -30,7 +30,7 @@ const leagues = [
     name: 'Бессмертная Лига',
     color: 'immortal',
     bgGradient: 'from-purple-600 via-purple-500 to-yellow-500',
-    glowEffect: 'animate-immortal-glow',
+    glowEffect: '',
     description: 'Высшая лига для чемпионов',
     minRank: 'Mythic Glory',
     maxPrize: '₽1,000,000',
@@ -41,7 +41,7 @@ const leagues = [
     name: 'Solo Leveling',
     color: 'soloLeveling',
     bgGradient: 'from-black via-purple-900 to-purple-600',
-    glowEffect: 'animate-solo-leveling-glow',
+    glowEffect: '',
     description: 'Для одиночных игроков',
     minRank: 'Epic I',
     maxPrize: '₽100,000',
@@ -64,16 +64,15 @@ export default function LeaguesSection() {
           {leagues.map((league) => (
             <Card 
               key={league.id} 
-              className={`bg-gradient-to-br ${league.bgGradient} border-2 border-${league.color} hover:scale-105 transition-all duration-300 animate-fade-in ${league.glowEffect} relative overflow-hidden`}
+              className={`bg-gradient-to-br ${league.bgGradient} border-2 border-${league.color} hover:scale-105 transition-all duration-300 relative overflow-hidden`}
             >
               {/* Aura Effect */}
               <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent pointer-events-none"></div>
               
               <CardHeader className="text-center relative z-10">
                 <div className="mx-auto mb-4 w-16 h-16 rounded-full bg-white/20 flex items-center justify-center backdrop-blur-sm relative overflow-hidden">
-                  {/* Soft glow effect */}
-                  <div className="absolute inset-0 rounded-full bg-gradient-to-r from-white/30 via-transparent to-white/30 animate-pulse opacity-70"></div>
-                  <div className="absolute inset-0 rounded-full bg-gradient-to-br from-white/10 via-transparent to-white/20 animate-bounce" style={{animationDuration: '3s'}}></div>
+                  {/* Soft static glow effect */}
+                  <div className="absolute inset-0 rounded-full bg-gradient-to-r from-white/20 via-transparent to-white/20 opacity-60"></div>
                   <Icon 
                     name={
                       league.id === 'legendary' ? 'Sword' : 
