@@ -7,119 +7,155 @@ import Icon from "@/components/ui/icon";
 
 const leagues = [
   {
-    id: 'bronze',
-    name: 'Бронзовая Лига',
-    color: 'bronze',
-    bgGradient: 'from-amber-600 to-amber-800',
-    description: 'Для начинающих игроков',
-    minRank: 'Warrior III',
-    maxPrize: '₽50,000'
+    id: 'legendary',
+    name: 'Легендарная Лига',
+    color: 'legendary',
+    bgGradient: 'from-red-600 via-red-500 to-yellow-500',
+    description: 'Стартовая лига для всех команд',
+    minRank: 'Grandmaster V',
+    maxPrize: '₽250,000'
   },
   {
-    id: 'silver',
-    name: 'Серебряная Лига',
-    color: 'silver',
-    bgGradient: 'from-gray-400 to-gray-600',
-    description: 'Для опытных игроков',
-    minRank: 'Elite III',
-    maxPrize: '₽150,000'
-  },
-  {
-    id: 'gold',
-    name: 'Золотая Лига',
-    color: 'gold',
-    bgGradient: 'from-yellow-400 to-yellow-600',
-    description: 'Для профессионалов',
-    minRank: 'Legend III',
+    id: 'mythic',
+    name: 'Мифическая Лига',
+    color: 'mythic',
+    bgGradient: 'from-cyan-400 via-cyan-500 to-yellow-500',
+    description: 'Элитная лига для лучших команд',
+    minRank: 'Mythic V',
     maxPrize: '₽500,000'
+  },
+  {
+    id: 'immortal',
+    name: 'Бессмертная Лига',
+    color: 'immortal',
+    bgGradient: 'from-orange-500 via-red-500 to-yellow-500',
+    description: 'Высшая лига для чемпионов',
+    minRank: 'Mythic Glory',
+    maxPrize: '₽1,000,000'
+  },
+  {
+    id: 'solo',
+    name: 'Solo Queue',
+    color: 'soloQueue',
+    bgGradient: 'from-purple-600 to-purple-800',
+    description: 'Для одиночных игроков',
+    minRank: 'Epic V',
+    maxPrize: '₽100,000'
   }
 ];
 
 const tournaments = {
-  bronze: [
+  legendary: [
     {
       id: 1,
-      name: "Кубок Новичков",
-      status: "registration",
-      prize: "₽25,000",
+      name: "Восхождение Легенд",
+      status: "live",
+      prize: "₽200,000",
       teams: 32,
-      viewers: "—",
-      date: "20 Августа",
-      stream: null,
-      progress: 20,
-      league: 'bronze'
+      viewers: "15.2K",
+      date: "15 Августа",
+      stream: "https://twitch.tv/mobilelegends",
+      progress: 45,
+      league: 'legendary'
     },
     {
       id: 2,
-      name: "Турнир Воинов",
-      status: "upcoming",
-      prize: "₽50,000",
-      teams: 16,
-      viewers: "2.1K",
+      name: "Битва Чемпионов",
+      status: "registration",
+      prize: "₽250,000",
+      teams: 24,
+      viewers: "—",
       date: "25 Августа",
       stream: null,
-      progress: 0,
-      league: 'bronze'
+      progress: 15,
+      league: 'legendary'
     }
   ],
-  silver: [
+  mythic: [
     {
       id: 3,
-      name: "Серебряный Штурм",
+      name: "Мифическое Господство",
       status: "live",
-      prize: "₽100,000",
-      teams: 24,
-      viewers: "8.5K",
+      prize: "₽500,000",
+      teams: 16,
+      viewers: "32.8K",
       date: "15 Августа",
       stream: "https://twitch.tv/mobilelegends",
-      progress: 65,
-      league: 'silver'
+      progress: 75,
+      league: 'mythic'
     },
     {
       id: 4,
-      name: "Элитный Чемпионат",
+      name: "Турнир Избранных",
       status: "upcoming",
-      prize: "₽150,000",
-      teams: 16,
+      prize: "₽400,000",
+      teams: 12,
       viewers: "—",
       date: "30 Августа",
       stream: null,
       progress: 0,
-      league: 'silver'
+      league: 'mythic'
     }
   ],
-  gold: [
+  immortal: [
     {
       id: 5,
-      name: "Кубок Легенд 2024",
+      name: "Бессмертные Войны",
       status: "live",
-      prize: "₽500,000",
-      teams: 16,
-      viewers: "25.3K",
+      prize: "₽1,000,000",
+      teams: 8,
+      viewers: "75.5K",
       date: "15 Августа",
       stream: "https://twitch.tv/mobilelegends",
-      progress: 75,
-      league: 'gold'
+      progress: 85,
+      league: 'immortal'
     },
     {
       id: 6,
-      name: "Мифический Турнир",
+      name: "Трон Чемпионов",
       status: "registration",
-      prize: "₽300,000",
-      teams: 12,
+      prize: "₽800,000",
+      teams: 6,
       viewers: "—",
       date: "1 Сентября",
       stream: null,
-      progress: 10,
-      league: 'gold'
+      progress: 5,
+      league: 'immortal'
+    }
+  ],
+  solo: [
+    {
+      id: 7,
+      name: "Solo Masters Cup",
+      status: "live",
+      prize: "₽75,000",
+      teams: 64,
+      viewers: "8.3K",
+      date: "15 Августа",
+      stream: "https://twitch.tv/mobilelegends",
+      progress: 30,
+      league: 'solo'
+    },
+    {
+      id: 8,
+      name: "Рандом Турнир",
+      status: "upcoming",
+      prize: "₽100,000",
+      teams: 80,
+      viewers: "—",
+      date: "22 Августа",
+      stream: null,
+      progress: 0,
+      league: 'solo'
     }
   ]
 };
 
 const matches = [
-  { id: 1, team1: "Phoenix Elite", team2: "Dragons Pro", time: "14:00", status: "live", league: "gold" },
-  { id: 2, team1: "Silver Wolves", team2: "Steel Tigers", time: "16:00", status: "upcoming", league: "silver" },
-  { id: 3, team1: "Bronze Eagles", team2: "Copper Lions", time: "18:00", status: "upcoming", league: "bronze" }
+  { id: 1, team1: "Immortal Phoenix", team2: "Divine Dragons", time: "14:00", status: "live", league: "immortal" },
+  { id: 2, team1: "Mythic Wolves", team2: "Celestial Tigers", time: "16:00", status: "upcoming", league: "mythic" },
+  { id: 3, team1: "Legend Eagles", team2: "Golden Lions", time: "18:00", status: "upcoming", league: "legendary" },
+  { id: 4, team1: "Random Team Alpha", team2: "Auto Squad Beta", time: "20:00", status: "upcoming", league: "solo" }
 ];
 
 const rules = [
@@ -158,7 +194,12 @@ export default function TournamentsSection() {
             <div key={league.id} className="space-y-4">
               <h4 className="text-2xl font-heading font-bold text-white flex items-center">
                 <Icon 
-                  name={league.id === 'bronze' ? 'Award' : league.id === 'silver' ? 'Medal' : 'Crown'} 
+                  name={
+                    league.id === 'legendary' ? 'Sword' : 
+                    league.id === 'mythic' ? 'Zap' : 
+                    league.id === 'immortal' ? 'Crown' : 
+                    'Users'
+                  } 
                   className={`mr-3 h-6 w-6 text-${league.color}`} 
                 />
                 {league.name}
