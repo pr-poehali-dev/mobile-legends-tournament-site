@@ -298,12 +298,19 @@ export default function TournamentsSection() {
 
                       <div className="flex gap-2">
                         {tournament.stream && (
-                          <Button className="flex-1 bg-purple-600 hover:bg-purple-700 text-white">
+                          <Button 
+                            onClick={() => window.open(tournament.stream!, '_blank')}
+                            className="flex-1 bg-purple-600 hover:bg-purple-700 text-white"
+                          >
                             <Icon name="Video" className="mr-2 h-4 w-4" />
                             Twitch
                           </Button>
                         )}
-                        <Button variant="outline" className={`flex-1 border-${league.color} text-${league.color} hover:bg-${league.color} hover:text-${league.id === 'gold' ? 'black' : 'white'}`}>
+                        <Button 
+                          onClick={() => alert(`Подробная информация о турнире "${tournament.name}" появится скоро!`)}
+                          variant="outline" 
+                          className={`flex-1 border-${league.color} text-${league.color} hover:bg-${league.color} hover:text-${league.id === 'gold' ? 'black' : 'white'}`}
+                        >
                           Подробнее
                         </Button>
                       </div>
@@ -347,7 +354,10 @@ export default function TournamentsSection() {
                           {match.status === 'live' ? 'LIVE' : 'Скоро'}
                         </Badge>
                         {match.status === 'live' && (
-                          <Button className="bg-purple-600 hover:bg-purple-700">
+                          <Button 
+                            onClick={() => window.open('https://twitch.tv/mobilelegends', '_blank')}
+                            className="bg-purple-600 hover:bg-purple-700"
+                          >
                             <Icon name="Video" className="mr-2 h-4 w-4" />
                             Смотреть
                           </Button>
@@ -395,7 +405,10 @@ export default function TournamentsSection() {
                     <Badge className="bg-red-500 animate-pulse">LIVE</Badge>
                     <div className="text-sm text-gray-400">25,341 зрителя</div>
                   </div>
-                  <Button className="w-full bg-purple-600 hover:bg-purple-700">
+                  <Button 
+                    onClick={() => window.open('https://twitch.tv/mobilelegends', '_blank')}
+                    className="w-full bg-purple-600 hover:bg-purple-700"
+                  >
                     Смотреть на Twitch
                   </Button>
                 </div>
@@ -419,7 +432,10 @@ export default function TournamentsSection() {
                     <Badge variant="secondary">Скоро</Badge>
                     <div className="text-sm text-gray-400">Начало в 16:00</div>
                   </div>
-                  <Button className="w-full bg-red-600 hover:bg-red-700">
+                  <Button 
+                    onClick={() => window.open('https://youtube.com/mobilelegends', '_blank')}
+                    className="w-full bg-red-600 hover:bg-red-700"
+                  >
                     Смотреть на YouTube
                   </Button>
                 </div>

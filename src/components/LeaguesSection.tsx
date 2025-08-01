@@ -106,6 +106,7 @@ export default function LeaguesSection() {
                 </div>
                 
                 <Button 
+                  onClick={() => alert(`Регистрация в лигу "${league.name}" откроется скоро! Следите за новостями в наших соцсетях.`)}
                   className="w-full bg-white/20 hover:bg-white/30 text-white border-white/30 hover:border-white/50 backdrop-blur-sm transition-all duration-300"
                   variant="outline"
                 >

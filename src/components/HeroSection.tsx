@@ -1,6 +1,17 @@
 import { Button } from "@/components/ui/button";
 import Icon from "@/components/ui/icon";
 
+const scrollToSection = (sectionId: string) => {
+  const element = document.getElementById(sectionId);
+  if (element) {
+    element.scrollIntoView({ behavior: 'smooth' });
+  }
+};
+
+const handleStreams = () => {
+  window.open('https://twitch.tv/mobilelegends', '_blank');
+};
+
 export default function HeroSection() {
   return (
     <section className="relative py-20 overflow-hidden">
@@ -12,8 +23,10 @@ export default function HeroSection() {
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center animate-fade-in">
           <h2 className="text-5xl md:text-7xl font-heading font-bold text-white mb-6">
-            Лиги
             <span className="block bg-gradient-to-r from-mlPurple to-mlGold bg-clip-text text-transparent">
+              Любительская арена
+            </span>
+            <span className="block text-white text-4xl md:text-5xl mt-2">
               Mobile Legends
             </span>
           </h2>
@@ -21,11 +34,18 @@ export default function HeroSection() {
             Соревнуйтесь в своей лиге! От новичков до профессионалов - каждый найдет подходящий турнир.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Button className="bg-gradient-to-r from-mlPurple to-purple-700 hover:from-purple-700 hover:to-mlPurple text-white px-8 py-3 text-lg animate-pulse-glow">
+            <Button 
+              onClick={() => scrollToSection('leagues')}
+              className="bg-gradient-to-r from-mlPurple to-purple-700 hover:from-purple-700 hover:to-mlPurple text-white px-8 py-3 text-lg animate-pulse-glow"
+            >
               <Icon name="Users" className="mr-2" />
               Выбрать лигу
             </Button>
-            <Button variant="outline" className="border-mlGold text-mlGold hover:bg-mlGold hover:text-black px-8 py-3 text-lg">
+            <Button 
+              onClick={handleStreams}
+              variant="outline" 
+              className="border-mlGold text-mlGold hover:bg-mlGold hover:text-black px-8 py-3 text-lg"
+            >
               <Icon name="Play" className="mr-2" />
               Смотреть стримы
             </Button>

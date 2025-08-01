@@ -9,8 +9,15 @@ export default function Index() {
     <div className="min-h-screen bg-gradient-to-br from-mlDark via-black to-mlBlack">
       <Header />
       <HeroSection />
-      <LeaguesSection />
-      <TournamentsSection />
+      <div id="leagues">
+        <LeaguesSection />
+      </div>
+      <div id="tournaments">
+        <TournamentsSection />
+      </div>
+      <div id="matches">
+        {/* Matches are handled within TournamentsSection tabs */}
+      </div>
       <Footer />
     </div>
   );
