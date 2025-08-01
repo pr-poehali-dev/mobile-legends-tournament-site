@@ -85,8 +85,7 @@ export default function HeroSection() {
             </Button>
             <Button 
               onClick={handleStreams}
-              variant="outline" 
-              className="border-white text-white hover:bg-white hover:text-black px-8 py-3 text-lg backdrop-blur-sm border-2 shadow-2xl"
+              className="bg-gradient-to-r from-mlGold to-orange-600 hover:from-orange-600 hover:to-mlGold text-white px-8 py-3 text-lg shadow-2xl"
             >
               <Icon name="Play" className="mr-2" />
               Смотреть стримы
