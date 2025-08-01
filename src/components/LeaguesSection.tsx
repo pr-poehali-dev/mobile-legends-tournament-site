@@ -70,7 +70,10 @@ export default function LeaguesSection() {
               <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent pointer-events-none"></div>
               
               <CardHeader className="text-center relative z-10">
-                <div className="mx-auto mb-4 w-16 h-16 rounded-full bg-white/20 flex items-center justify-center backdrop-blur-sm">
+                <div className="mx-auto mb-4 w-16 h-16 rounded-full bg-white/20 flex items-center justify-center backdrop-blur-sm relative overflow-hidden">
+                  {/* Soft glow effect */}
+                  <div className="absolute inset-0 rounded-full bg-gradient-to-r from-white/30 via-transparent to-white/30 animate-pulse opacity-70"></div>
+                  <div className="absolute inset-0 rounded-full bg-gradient-to-br from-white/10 via-transparent to-white/20 animate-bounce" style={{animationDuration: '3s'}}></div>
                   <Icon 
                     name={
                       league.id === 'legendary' ? 'Sword' : 
@@ -78,7 +81,7 @@ export default function LeaguesSection() {
                       league.id === 'immortal' ? 'Crown' : 
                       'Users'
                     } 
-                    className="h-8 w-8 text-white drop-shadow-lg" 
+                    className="h-8 w-8 text-white drop-shadow-lg relative z-10 transition-all duration-500" 
                   />
                 </div>
                 <CardTitle className="text-xl font-heading font-bold text-white drop-shadow-lg">
@@ -131,7 +134,7 @@ export default function LeaguesSection() {
                 <div>Только лучшие из лучших попадают в высшую лигу</div>
               </div>
               <div className="space-y-2">
-                <div className="font-semibold text-soloLeveling">Solo Leveling</div>
+                <div className="font-semibold text-purple-300">Solo Leveling</div>
                 <div>Система автоматически создает команды из 5 случайных игроков</div>
               </div>
             </div>
