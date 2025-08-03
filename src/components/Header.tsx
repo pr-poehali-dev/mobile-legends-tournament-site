@@ -27,11 +27,11 @@ export default function Header() {
             <button onClick={() => scrollToSection('leagues')} className="text-white hover:text-mlGold transition-colors">
               Лиги
             </button>
-            <button onClick={() => scrollToSection('tournaments')} className="text-white hover:text-mlGold transition-colors">
-              Турниры
+            <button disabled className="text-gray-500 cursor-not-allowed">
+              Турниры <span className="text-xs">(скоро)</span>
             </button>
-            <button onClick={() => scrollToSection('matches')} className="text-white hover:text-mlGold transition-colors">
-              Матчи
+            <button disabled className="text-gray-500 cursor-not-allowed">
+              Матчи <span className="text-xs">(скоро)</span>
             </button>
             <Button 
               onClick={handleRegistration}
