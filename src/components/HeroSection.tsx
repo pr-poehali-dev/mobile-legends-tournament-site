@@ -15,6 +15,10 @@ const handleStreams = () => {
 
 const heroImages = [
   {
+    url: "https://cdn.poehali.dev/files/db04d740-43fc-4165-9402-93faf0a92812.jpg",
+    alt: "Welcome to Mobile Legends Community"
+  },
+  {
     url: "https://cdn.poehali.dev/files/af6d3255-cd08-44eb-ae0d-dcf44ac89566.jpg",
     alt: "Mobile Legends Heroes Collection"
   },
